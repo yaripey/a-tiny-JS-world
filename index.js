@@ -7,7 +7,40 @@
 
 // ======== OBJECTS DEFINITIONS ========
 // Define your objects here
-
+const inhabitants = [
+  {
+    species: "cat",
+    name: "Tom",
+    legs: 4,
+    hands: 0,
+    gender: 'male',
+    message: "Mrrrr...."
+  },
+  {
+    species: "dog",
+    name: "Goofy",
+    legs: 4,
+    hands: 0,
+    gender: 'male',
+    message: "Bark!"
+  },
+  {
+    species: 'human',
+    name: "Jeany",
+    legs: 2,
+    hands: 2,
+    gender: 'female',
+    message: "Hey there, James!",
+  },
+  {
+    species: 'human',
+    name: "James",
+    legs: 2,
+    hands: 2,
+    gender: 'male',
+    message: "Good morning, Jeany!"
+  }
+]
 
 // ======== OUTPUT ========
 /* Use print(message) for output.
@@ -28,4 +61,4 @@
    print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny', 'div');
    */
 
-
+inhabitants.forEach(elem => print(`${elem.species}; ${elem.name}; ${elem.gender}; ${elem.legs}; ${elem.hands}; ${elem.message}`))
