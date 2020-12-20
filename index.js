@@ -61,4 +61,6 @@ const inhabitants = [
    print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny', 'div');
    */
 
-inhabitants.forEach(elem => print(`${elem.species}; ${elem.name}; ${elem.gender}; ${elem.legs}; ${elem.hands}; ${elem.message}`))
+inhabitants.forEach(elem => {
+  print(Object.keys(elem).map(property => elem[property]).join('; '))
+})
